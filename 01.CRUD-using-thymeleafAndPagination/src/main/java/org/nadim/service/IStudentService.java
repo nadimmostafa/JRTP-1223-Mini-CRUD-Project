@@ -3,6 +3,8 @@ package org.nadim.service;
 import java.util.List;
 
 import org.nadim.entity.StudentEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface IStudentService {
 	
@@ -13,12 +15,15 @@ public interface IStudentService {
 	public StudentEntity getOneStudent(Integer id);
 	
 	//3. Update student 
-	public String editStudent(StudentEntity std);
+	public void editStudent(StudentEntity std);
 	
 	//4 Delete student
 	public void deleteOneStudent(Integer id);
 	
 	// get all Student
 	public List<StudentEntity> getAllStudent();
+	
+	//get all Student using Pageable
+	public Page<StudentEntity> getAllStudent(Pageable page);
 	
 }

@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+.cw{
+	width: 650px;
+	margin-top: 60px;
+	padding: 30px;
+}
+
+.btn-add{
+	margin-top: 15px;
+}
